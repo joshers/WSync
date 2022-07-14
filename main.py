@@ -37,7 +37,7 @@ def wordle_validate():
 
 
 def writefile(type, hash, var, content):
-    file = open(writepath + type + "." + hash + ".js", "w")
+    file = open(write_path + type + "." + hash + ".js", "w")
     file.write("var " + var + " = " + content)
     file.close()
 
